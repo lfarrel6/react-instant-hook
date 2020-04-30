@@ -1,0 +1,25 @@
+{
+  "name": "react-instant-hook",
+  "version": "0.1.0",
+  "description": "A lightweight module to instantly create hooks for your react contexts",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lfarrel6/react-instant-hook.git"
+  },
+  "keywords": [
+    "react",
+    "hooks",
+    "context",
+    "useContext"
+  ],
+  "author": "Liam Farrelly",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lfarrel6/react-instant-hook/issues"
+  },
+  "homepage": "https://github.com/lfarrel6/react-instant-hook#readme"
+}
