@@ -11,6 +11,12 @@ const checkContext = (context) => {
   }
 };
 
+const checkReactVersion = () => {
+  if (typeof useContext !== 'function') {
+    throw new Error('You must be using React >= 16.8 to use getHook');
+  }
+};
+
 const createHook = (context, validateFn) => {
   checkContext(context);
   checkReactVersion();
