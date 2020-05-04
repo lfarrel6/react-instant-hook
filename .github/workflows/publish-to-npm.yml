@@ -1,0 +1,23 @@
+# Adapted from https://sergiodxa.com/articles/github-actions-npm-publish/
+
+name: Publish to NPM
+
+# Controls when the action will run. Triggers the workflow on each new publish
+on:
+  release:
+    types: [published]
+        
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12
+          registry-url: https://registry.npmjs.org/
+      - run: npm install
+      - run: npm run build
+      - run: npm publish --access public
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
