@@ -2,7 +2,7 @@
   "name": "react-instant-hook",
   "version": "0.1.0",
   "description": "A lightweight module to instantly create hooks for your react contexts",
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npx webpack --mode=production"
@@ -17,7 +17,10 @@
     "context",
     "useContext"
   ],
-  "author": "Liam Farrelly",
+  "author": {
+    "name": "Liam Farrelly",
+    "url": "https://l3f7.dev"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/lfarrel6/react-instant-hook/issues"
@@ -27,14 +30,14 @@
     "react": "^16.8.0"
   },
   "devDependencies": {
-    "@types/react": "^16.9.34",
     "@babel/core": "^7.7.4",
     "@babel/plugin-proposal-class-properties": "^7.7.4",
     "@babel/preset-env": "^7.7.4",
     "@babel/preset-react": "^7.7.4",
+    "@types/react": "^16.9.34",
     "babel-loader": "^8.1.0",
     "webpack": "^4.41.2",
-    "webpack-cli": "^3.3.10"
+    "webpack-cli": "^3.3.11"
   },
   "dependencies": {}
 }

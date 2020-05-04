@@ -1,5 +1,2 @@
-.gitignore
-package-lock.json
-package.json
-webpack.config.js
-src/
+node_modules
+package_lock.json
