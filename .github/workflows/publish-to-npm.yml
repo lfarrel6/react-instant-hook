@@ -1,11 +1,10 @@
-# Adapted from https://sergiodxa.com/articles/github-actions-npm-publish/
-
 name: Publish to NPM
 
 # Controls when the action will run. Triggers the workflow on each new publish
 on:
-  release:
-    types: [published]
+  push:
+    tags:
+    - "*"
         
 jobs:
   build-and-publish:
