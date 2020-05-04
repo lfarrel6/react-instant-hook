@@ -6,6 +6,9 @@ I find that hooks make for much cleaner components in react, and custom context 
 
 This module removes that boilerplate, and lets you create custom hooks for your context with one line. 
 
+# Install
+`npm i react-instant-hook`
+
 # Usage
 Simply declare your contexts as normal, and then pass them into `getHook` to receive your context hook.
 
